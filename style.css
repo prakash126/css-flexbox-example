@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: rgb(255, 0, 119);
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 60px auto;
+}
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #f1f1f1;
+  /* flex-direction: row-reverse; */
+  justify-content: flex-end;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: #333;
+  padding: 20px 34px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #333;
+  padding: 20px;
+}
+/* .sidenav {
+  background-color: #333;
+} */
+.sitem {
+  margin: 30px 25px;
+  padding: 10px 5px;
+}
+.sitem:hover {
+  border-bottom: 3px solid #f1f1f1;
+  /* background-color: #f1f1f1; */
+}
+.sitem a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: #f1f1f1;
+}
+/* .sitem a:hover {
+  color: #333;
+  text-align: center;
+} */
+/* Main column */
+.main {
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.img {
+  display: flex;
+  flex-direction: row;
+}
+.fakeimg {
+  /* background-color: #aaa; */
+  /* width: 80%; */
+  /* padding: 10px; */
+  margin-right: 5px;
+}
+.fakeimg img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.hotelInfo {
+  background-color: white;
+}
+.hotelInfoDetails {
+  display: flex;
+  justify-content: space-between;
+  color: #646464;
+}
+.hotelInfoDetailsTitle {
+  display: flex;
+  align-items: center;
+}
+.hotelAddressMain {
+  display: flex;
+  align-items: center;
+}
+.hotelInfoDetailsTitle span {
+  margin-left: 10px;
+  color: #e73564;
+}
+.hotelInfoDetailsTitle h3 {
+  font-family: -webkit-body;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 20px;
+
+  padding-left: 20px;
+}
+
+.hotelAddress {
+  color: #e73564;
+  display: flex;
+  align-items: center;
+}
+.hotelRating {
+  color: white;
+  background-color: #e73564;
+  text-align: center;
+  margin-left: 30px;
+  padding: 20px;
+}
+.hotelDescp {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  color: #4b4c4c;
+  font-family: -webkit-body;
+}
+.hotelDescpCol {
+  width: 60%;
+}
+.hotelDescpCol ul {
+  list-style-type: disc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.hotelDescpCol li {
+  width: 40%;
+}
+.hotelDescpCol li::marker {
+  color: #e73564;
+  width: 10px;
+}
+.hotelDescpCol2 {
+  width: 38%;
+}
+.content-section-row {
+  display: flex;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
